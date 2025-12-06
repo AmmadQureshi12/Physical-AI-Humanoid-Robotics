@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-chapter-05-appendices/troubleshooting" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">Troubleshooting Guide for AI-Humanoid Robotics Curriculum | AI Systems in the Physical World - Embodied Intelligence</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/troubleshooting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Troubleshooting Guide for AI-Humanoid Robotics Curriculum | AI Systems in the Physical World - Embodied Intelligence"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/Physical-AI-Humanoid-Robotics/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/troubleshooting"><link data-rh="true" rel="alternate" href="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/troubleshooting" hreflang="en"><link data-rh="true" rel="alternate" href="https://AmmadQureshi12.github.io/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/troubleshooting" hreflang="x-default"><link rel="stylesheet" href="/Physical-AI-Humanoid-Robotics/assets/css/styles.d42d66b0.css">
+<script src="/Physical-AI-Humanoid-Robotics/assets/js/runtime~main.c973849c.js" defer="defer"></script>
+<script src="/Physical-AI-Humanoid-Robotics/assets/js/main.e2fe3e87.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Physical-AI-Humanoid-Robotics/"><div class="navbar__logo"><img src="/Physical-AI-Humanoid-Robotics/img/logo.jpg" alt="AI-Humanoid Robotics logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Physical-AI-Humanoid-Robotics/img/logo.jpg" alt="AI-Humanoid Robotics logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI-Humanoid Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Physical-AI-Humanoid-Robotics/docs">Book Chapters</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Physical-AI-Humanoid-Robotics/docs">Read Book</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/AmmadQureshi12/Physical-AI-Humanoid-Robotics" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/Physical-AI-Humanoid-Robotics/docs">Introduction</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/Physical-AI-Humanoid-Robotics/docs/chapter-01-ros2-fundamentals">Chapter 1 - ROS 2 Fundamentals</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/Physical-AI-Humanoid-Robotics/docs/chapter-02-digital-twin">Chapter 2 - Simulation Skills</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/Physical-AI-Humanoid-Robotics/docs/chapter-03-vla-integration">Chapter 3 - AI Perception &amp; VLA Integration</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/Physical-AI-Humanoid-Robotics/docs/chapter-04-capstone-project">Chapter 4 - Capstone Humanoid Project</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices">Chapter 5 - Appendices</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices">Chapter 5: Appendices</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/spec">Chapter 5: Appendices - Specification</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/setup-guide">Comprehensive Setup Guide for AI-Humanoid Robotics Curriculum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/troubleshooting">Troubleshooting Guide for AI-Humanoid Robotics Curriculum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/references">References for AI-Humanoid Robotics Curriculum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/hardware-validation">Hardware Validation for RTX 4070 Ti and Jetson Orin Nano</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/performance-validation">Real-Time Performance Validation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/word-count-verification">Curriculum Word Count Verification</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/final-review-report">Final Review and Deployment Report</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Physical-AI-Humanoid-Robotics/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Chapter 5 - Appendices</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Troubleshooting Guide for AI-Humanoid Robotics Curriculum</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Troubleshooting Guide for AI-Humanoid Robotics Curriculum</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>This guide provides solutions to common problems encountered when working with the AI-Humanoid Robotics curriculum. It covers issues related to ROS 2, simulation environments, AI integration, and hardware validation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="general-troubleshooting-approach">General Troubleshooting Approach<a href="#general-troubleshooting-approach" class="hash-link" aria-label="Direct link to General Troubleshooting Approach" title="Direct link to General Troubleshooting Approach">​</a></h2>
+<ol>
+<li><strong>Check the basics</strong>: Ensure all required software is installed and properly configured</li>
+<li><strong>Verify environment setup</strong>: Confirm ROS 2 environment is sourced, paths are set correctly</li>
+<li><strong>Check system resources</strong>: Ensure sufficient RAM, disk space, and GPU resources</li>
+<li><strong>Review logs</strong>: Examine ROS 2 logs and system messages for error details</li>
+<li><strong>Isolate the problem</strong>: Test components individually before integration</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-ros-2-common-issues">1. ROS 2 Common Issues<a href="#1-ros-2-common-issues" class="hash-link" aria-label="Direct link to 1. ROS 2 Common Issues" title="Direct link to 1. ROS 2 Common Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-ros2-command-not-found">Problem: <code>ros2</code> command not found<a href="#problem-ros2-command-not-found" class="hash-link" aria-label="Direct link to problem-ros2-command-not-found" title="Direct link to problem-ros2-command-not-found">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Source the ROS 2 installation: <code>source /opt/ros/humble/setup.bash</code></li>
+<li>Add to your <code>.bashrc</code> file: <code>echo &quot;source /opt/ros/humble/setup.bash&quot; &gt;&gt; ~/.bashrc</code></li>
+<li>Verify installation: <code>printenv | grep ROS</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-nodes-cannot-communicate-across-machines">Problem: Nodes cannot communicate across machines<a href="#problem-nodes-cannot-communicate-across-machines" class="hash-link" aria-label="Direct link to Problem: Nodes cannot communicate across machines" title="Direct link to Problem: Nodes cannot communicate across machines">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Ensure machines are on the same network</li>
+<li>Set ROS domain ID consistently: <code>export ROS_DOMAIN_ID=0</code></li>
+<li>Check firewall settings for DDS communication (usually ports 7400+)</li>
+<li>Verify network configuration: <code>ros2 topic list</code> on both machines</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-missing-ros-2-packages">Problem: Missing ROS 2 packages<a href="#problem-missing-ros-2-packages" class="hash-link" aria-label="Direct link to Problem: Missing ROS 2 packages" title="Direct link to Problem: Missing ROS 2 packages">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Update package lists: <code>sudo apt update</code></li>
+<li>Install missing packages: <code>sudo apt install ros-humble-PACKAGE_NAME</code></li>
+<li>Use rosdep: <code>rosdep install --from-paths src --ignore-src -r -y</code></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-simulation-environment-issues">2. Simulation Environment Issues<a href="#2-simulation-environment-issues" class="hash-link" aria-label="Direct link to 2. Simulation Environment Issues" title="Direct link to 2. Simulation Environment Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-gazebo-fails-to-start-or-crashes-immediately">Problem: Gazebo fails to start or crashes immediately<a href="#problem-gazebo-fails-to-start-or-crashes-immediately" class="hash-link" aria-label="Direct link to Problem: Gazebo fails to start or crashes immediately" title="Direct link to Problem: Gazebo fails to start or crashes immediately">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Check GPU drivers: <code>nvidia-smi</code> or <code>glxinfo | grep &quot;OpenGL renderer&quot;</code></li>
+<li>Install graphics libraries: <code>sudo apt install mesa-utils</code></li>
+<li>Try software rendering: <code>export LIBGL_ALWAYS_SOFTWARE=1</code></li>
+<li>Ensure sufficient RAM for physics simulation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-robot-model-appears-invisible-in-gazebo">Problem: Robot model appears invisible in Gazebo<a href="#problem-robot-model-appears-invisible-in-gazebo" class="hash-link" aria-label="Direct link to Problem: Robot model appears invisible in Gazebo" title="Direct link to Problem: Robot model appears invisible in Gazebo">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Verify URDF file syntax: <code>check_urdf path/to/robot.urdf</code></li>
+<li>Check that mesh files are in correct location</li>
+<li>Verify material definitions in URDF</li>
+<li>Try different Gazebo versions if using complex materials</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-unity-does-not-connect-to-ros-2">Problem: Unity does not connect to ROS 2<a href="#problem-unity-does-not-connect-to-ros-2" class="hash-link" aria-label="Direct link to Problem: Unity does not connect to ROS 2" title="Direct link to Problem: Unity does not connect to ROS 2">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Install ROS# Unity package</li>
+<li>Verify IP addresses and ports are correctly configured</li>
+<li>Check firewall settings allow communication</li>
+<li>Ensure ROS 2 network configuration is compatible</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-ai-integration-issues">3. AI Integration Issues<a href="#3-ai-integration-issues" class="hash-link" aria-label="Direct link to 3. AI Integration Issues" title="Direct link to 3. AI Integration Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-whisper-fails-to-recognize-speech">Problem: Whisper fails to recognize speech<a href="#problem-whisper-fails-to-recognize-speech" class="hash-link" aria-label="Direct link to Problem: Whisper fails to recognize speech" title="Direct link to Problem: Whisper fails to recognize speech">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Check microphone permissions and functionality</li>
+<li>Verify audio input levels: <code>alsamixer</code></li>
+<li>Test audio input: <code>arecord -d 3 test.wav &amp;&amp; play test.wav</code></li>
+<li>Ensure OpenAI API key is set: <code>export OPENAI_API_KEY=&#x27;your-key&#x27;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-llm-does-not-generate-appropriate-plans">Problem: LLM does not generate appropriate plans<a href="#problem-llm-does-not-generate-appropriate-plans" class="hash-link" aria-label="Direct link to Problem: LLM does not generate appropriate plans" title="Direct link to Problem: LLM does not generate appropriate plans">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Review system prompts for clarity and completeness</li>
+<li>Verify LLM response is properly parsed as JSON</li>
+<li>Check that robot actions exist in the action server</li>
+<li>Implement fallback strategies for ambiguous commands</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-vision-language-models-not-processing-correctly">Problem: Vision-Language models not processing correctly<a href="#problem-vision-language-models-not-processing-correctly" class="hash-link" aria-label="Direct link to Problem: Vision-Language models not processing correctly" title="Direct link to Problem: Vision-Language models not processing correctly">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Verify camera topics are publishing: <code>ros2 topic echo /camera/image_raw</code></li>
+<li>Check image format compatibility</li>
+<li>Ensure proper synchronization between vision and language inputs</li>
+<li>Test vision processing independently before integration</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-performance-issues">4. Performance Issues<a href="#4-performance-issues" class="hash-link" aria-label="Direct link to 4. Performance Issues" title="Direct link to 4. Performance Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-high-latency-in-voice-processing-or-planning">Problem: High latency in voice processing or planning<a href="#problem-high-latency-in-voice-processing-or-planning" class="hash-link" aria-label="Direct link to Problem: High latency in voice processing or planning" title="Direct link to Problem: High latency in voice processing or planning">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Optimize network calls to LLM services</li>
+<li>Implement caching for frequently requested information</li>
+<li>Consider using faster, smaller models for initial processing</li>
+<li>Optimize audio preprocessing pipeline</li>
+<li>Implement asynchronous processing where possible</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-robot-movement-is-jerky-or-unstable">Problem: Robot movement is jerky or unstable<a href="#problem-robot-movement-is-jerky-or-unstable" class="hash-link" aria-label="Direct link to Problem: Robot movement is jerky or unstable" title="Direct link to Problem: Robot movement is jerky or unstable">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Check control loop timing and update rates</li>
+<li>Adjust PID controller parameters</li>
+<li>Verify sensor feedback is timely and accurate</li>
+<li>Confirm actuator commands are within safe ranges</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-system-uses-too-much-cpu-or-memory">Problem: System uses too much CPU or memory<a href="#problem-system-uses-too-much-cpu-or-memory" class="hash-link" aria-label="Direct link to Problem: System uses too much CPU or memory" title="Direct link to Problem: System uses too much CPU or memory">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Monitor resource usage: <code>htop</code> or <code>nvidia-smi</code></li>
+<li>Reduce simulation complexity (simpler collision meshes)</li>
+<li>Optimize sensor update rates</li>
+<li>Close unnecessary applications during execution</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-sim-to-real-transfer-issues">5. Sim-to-Real Transfer Issues<a href="#5-sim-to-real-transfer-issues" class="hash-link" aria-label="Direct link to 5. Sim-to-Real Transfer Issues" title="Direct link to 5. Sim-to-Real Transfer Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-behavior-that-works-in-simulation-fails-on-hardware">Problem: Behavior that works in simulation fails on hardware<a href="#problem-behavior-that-works-in-simulation-fails-on-hardware" class="hash-link" aria-label="Direct link to Problem: Behavior that works in simulation fails on hardware" title="Direct link to Problem: Behavior that works in simulation fails on hardware">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Account for sensor noise and uncertainty in real environments</li>
+<li>Adjust control parameters for real-world dynamics</li>
+<li>Implement proper safety checks before real-world execution</li>
+<li>Calibrate sensors and actuators properly</li>
+<li>Test extensively in simulation with added noise models</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-physical-robot-does-not-follow-simulated-trajectories">Problem: Physical robot does not follow simulated trajectories<a href="#problem-physical-robot-does-not-follow-simulated-trajectories" class="hash-link" aria-label="Direct link to Problem: Physical robot does not follow simulated trajectories" title="Direct link to Problem: Physical robot does not follow simulated trajectories">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Verify robot kinematic model matches physical robot</li>
+<li>Recalibrate sensors and actuators</li>
+<li>Adjust for real-world friction and environmental factors</li>
+<li>Implement robust control methods that handle uncertainties</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-multi-step-task-execution-issues">6. Multi-Step Task Execution Issues<a href="#6-multi-step-task-execution-issues" class="hash-link" aria-label="Direct link to 6. Multi-Step Task Execution Issues" title="Direct link to 6. Multi-Step Task Execution Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-complex-tasks-fail-partway-through-execution">Problem: Complex tasks fail partway through execution<a href="#problem-complex-tasks-fail-partway-through-execution" class="hash-link" aria-label="Direct link to Problem: Complex tasks fail partway through execution" title="Direct link to Problem: Complex tasks fail partway through execution">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Implement proper state tracking and recovery mechanisms</li>
+<li>Add validation checks after each step</li>
+<li>Design tasks with error recovery in mind</li>
+<li>Implement timeouts and fallback behaviors</li>
+<li>Test individual steps before combining into complex tasks</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-system-does-not-respond-to-voice-commands-correctly">Problem: System does not respond to voice commands correctly<a href="#problem-system-does-not-respond-to-voice-commands-correctly" class="hash-link" aria-label="Direct link to Problem: System does not respond to voice commands correctly" title="Direct link to Problem: System does not respond to voice commands correctly">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Verify ASR (speech-to-text) accuracy</li>
+<li>Check that NLP correctly parses commands</li>
+<li>Ensure command mapping to robot capabilities is accurate</li>
+<li>Implement error handling for misunderstood commands</li>
+<li>Add confirmation steps for critical commands</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-hardware-issues">7. Hardware Issues<a href="#7-hardware-issues" class="hash-link" aria-label="Direct link to 7. Hardware Issues" title="Direct link to 7. Hardware Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-jetson-orin-nano-not-detected-or-communicating">Problem: Jetson Orin Nano not detected or communicating<a href="#problem-jetson-orin-nano-not-detected-or-communicating" class="hash-link" aria-label="Direct link to Problem: Jetson Orin Nano not detected or communicating" title="Direct link to Problem: Jetson Orin Nano not detected or communicating">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Check physical connections (USB, Ethernet, etc.)</li>
+<li>Verify power supply is adequate</li>
+<li>Confirm correct drivers are installed</li>
+<li>Test basic communication: <code>ssh jetson@ip_address</code></li>
+<li>Ensure ROS 2 setup is correct on the device</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-sensors-not-publishing-data">Problem: Sensors not publishing data<a href="#problem-sensors-not-publishing-data" class="hash-link" aria-label="Direct link to Problem: Sensors not publishing data" title="Direct link to Problem: Sensors not publishing data">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Check physical connections and power</li>
+<li>Verify driver installation: <code>lsusb</code> or <code>lspci</code></li>
+<li>Check topic availability: <code>ros2 topic list</code></li>
+<li>Verify permission settings for sensor access</li>
+<li>Test sensors independently of ROS 2 first</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-development-environment-issues">8. Development Environment Issues<a href="#8-development-environment-issues" class="hash-link" aria-label="Direct link to 8. Development Environment Issues" title="Direct link to 8. Development Environment Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-docusaurus-development-server-not-starting">Problem: Docusaurus development server not starting<a href="#problem-docusaurus-development-server-not-starting" class="hash-link" aria-label="Direct link to Problem: Docusaurus development server not starting" title="Direct link to Problem: Docusaurus development server not starting">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Ensure Node.js 18+ is installed: <code>node --version</code></li>
+<li>Install dependencies: <code>cd book &amp;&amp; npm install</code></li>
+<li>Clear cache: <code>npm start -- --clear-cache</code></li>
+<li>Check port availability: <code>sudo lsof -i :3000</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problem-code-compilation-fails">Problem: Code compilation fails<a href="#problem-code-compilation-fails" class="hash-link" aria-label="Direct link to Problem: Code compilation fails" title="Direct link to Problem: Code compilation fails">​</a></h3>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Verify all dependencies are installed</li>
+<li>Check ROS workspace setup: <code>source install/setup.bash</code></li>
+<li>Run <code>colcon build</code> in workspace root</li>
+<li>Check for missing package dependencies</li>
+<li>Review compiler error messages for specific issues</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-additional-help">Getting Additional Help<a href="#getting-additional-help" class="hash-link" aria-label="Direct link to Getting Additional Help" title="Direct link to Getting Additional Help">​</a></h2>
+<p>If these troubleshooting steps do not resolve your issue:</p>
+<ol>
+<li>Check the ROS Answers website: <a href="https://answers.ros.org/" target="_blank" rel="noopener noreferrer">https://answers.ros.org/</a></li>
+<li>Review the documentation for each component (ROS 2, Gazebo, Unity, etc.)</li>
+<li>Search for similar issues in project repositories</li>
+<li>Verify your setup against the hardware requirements</li>
+<li>Consider asking for help in relevant community forums</li>
+</ol>
+<p>Always include these details when seeking help:</p>
+<ul>
+<li>Operating system version</li>
+<li>ROS 2 version</li>
+<li>Steps to reproduce the issue</li>
+<li>Exact error messages</li>
+<li>What you&#x27;ve tried already</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/AmmadQureshi12/Physical-AI-Humanoid-Robotics/tree/main/docs/chapter-05-appendices/troubleshooting.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/setup-guide"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Comprehensive Setup Guide for AI-Humanoid Robotics Curriculum</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices/references"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">References for AI-Humanoid Robotics Curriculum</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#general-troubleshooting-approach" class="table-of-contents__link toc-highlight">General Troubleshooting Approach</a></li><li><a href="#1-ros-2-common-issues" class="table-of-contents__link toc-highlight">1. ROS 2 Common Issues</a><ul><li><a href="#problem-ros2-command-not-found" class="table-of-contents__link toc-highlight">Problem: <code>ros2</code> command not found</a></li><li><a href="#problem-nodes-cannot-communicate-across-machines" class="table-of-contents__link toc-highlight">Problem: Nodes cannot communicate across machines</a></li><li><a href="#problem-missing-ros-2-packages" class="table-of-contents__link toc-highlight">Problem: Missing ROS 2 packages</a></li></ul></li><li><a href="#2-simulation-environment-issues" class="table-of-contents__link toc-highlight">2. Simulation Environment Issues</a><ul><li><a href="#problem-gazebo-fails-to-start-or-crashes-immediately" class="table-of-contents__link toc-highlight">Problem: Gazebo fails to start or crashes immediately</a></li><li><a href="#problem-robot-model-appears-invisible-in-gazebo" class="table-of-contents__link toc-highlight">Problem: Robot model appears invisible in Gazebo</a></li><li><a href="#problem-unity-does-not-connect-to-ros-2" class="table-of-contents__link toc-highlight">Problem: Unity does not connect to ROS 2</a></li></ul></li><li><a href="#3-ai-integration-issues" class="table-of-contents__link toc-highlight">3. AI Integration Issues</a><ul><li><a href="#problem-whisper-fails-to-recognize-speech" class="table-of-contents__link toc-highlight">Problem: Whisper fails to recognize speech</a></li><li><a href="#problem-llm-does-not-generate-appropriate-plans" class="table-of-contents__link toc-highlight">Problem: LLM does not generate appropriate plans</a></li><li><a href="#problem-vision-language-models-not-processing-correctly" class="table-of-contents__link toc-highlight">Problem: Vision-Language models not processing correctly</a></li></ul></li><li><a href="#4-performance-issues" class="table-of-contents__link toc-highlight">4. Performance Issues</a><ul><li><a href="#problem-high-latency-in-voice-processing-or-planning" class="table-of-contents__link toc-highlight">Problem: High latency in voice processing or planning</a></li><li><a href="#problem-robot-movement-is-jerky-or-unstable" class="table-of-contents__link toc-highlight">Problem: Robot movement is jerky or unstable</a></li><li><a href="#problem-system-uses-too-much-cpu-or-memory" class="table-of-contents__link toc-highlight">Problem: System uses too much CPU or memory</a></li></ul></li><li><a href="#5-sim-to-real-transfer-issues" class="table-of-contents__link toc-highlight">5. Sim-to-Real Transfer Issues</a><ul><li><a href="#problem-behavior-that-works-in-simulation-fails-on-hardware" class="table-of-contents__link toc-highlight">Problem: Behavior that works in simulation fails on hardware</a></li><li><a href="#problem-physical-robot-does-not-follow-simulated-trajectories" class="table-of-contents__link toc-highlight">Problem: Physical robot does not follow simulated trajectories</a></li></ul></li><li><a href="#6-multi-step-task-execution-issues" class="table-of-contents__link toc-highlight">6. Multi-Step Task Execution Issues</a><ul><li><a href="#problem-complex-tasks-fail-partway-through-execution" class="table-of-contents__link toc-highlight">Problem: Complex tasks fail partway through execution</a></li><li><a href="#problem-system-does-not-respond-to-voice-commands-correctly" class="table-of-contents__link toc-highlight">Problem: System does not respond to voice commands correctly</a></li></ul></li><li><a href="#7-hardware-issues" class="table-of-contents__link toc-highlight">7. Hardware Issues</a><ul><li><a href="#problem-jetson-orin-nano-not-detected-or-communicating" class="table-of-contents__link toc-highlight">Problem: Jetson Orin Nano not detected or communicating</a></li><li><a href="#problem-sensors-not-publishing-data" class="table-of-contents__link toc-highlight">Problem: Sensors not publishing data</a></li></ul></li><li><a href="#8-development-environment-issues" class="table-of-contents__link toc-highlight">8. Development Environment Issues</a><ul><li><a href="#problem-docusaurus-development-server-not-starting" class="table-of-contents__link toc-highlight">Problem: Docusaurus development server not starting</a></li><li><a href="#problem-code-compilation-fails" class="table-of-contents__link toc-highlight">Problem: Code compilation fails</a></li></ul></li><li><a href="#getting-additional-help" class="table-of-contents__link toc-highlight">Getting Additional Help</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Chapters</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Humanoid-Robotics/docs/chapter-01-ros2-fundamentals">Chapter 1: ROS 2 Fundamentals</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Humanoid-Robotics/docs/chapter-02-digital-twin">Chapter 2: Simulation Skills</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Humanoid-Robotics/docs/chapter-03-vla-integration">Chapter 3: AI Perception &amp; VLA Integration</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Humanoid-Robotics/docs/chapter-04-capstone-project">Chapter 4: Capstone Humanoid Project</a></li><li class="footer__item"><a class="footer__link-item" href="/Physical-AI-Humanoid-Robotics/docs/chapter-05-appendices">Chapter 5: Appendices</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/AmmadQureshi12/Physical-AI-Humanoid-Robotics" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 AI-Humanoid Robotics Book. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
