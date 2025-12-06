@@ -1,0 +1,115 @@
+<!-- VLA Pipeline Diagram -->
+<svg width="1000" height="700" xmlns="http://www.w3.org/2000/svg">
+  <title>Vision-Language-Action Pipeline</title>
+  <desc>Diagram showing the VLA pipeline: Vision → Language → Action</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="500" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">
+    Vision-Language-Action (VLA) Pipeline
+  </text>
+  
+  <!-- Vision Input -->
+  <g transform="translate(50, 100)">
+    <circle cx="60" cy="40" r="40" fill="#e0e0e0" stroke="#000000" stroke-width="2"/>
+    <text x="60" y="45" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Vision</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Camera)</text>
+    <rect x="0" y="80" width="120" height="60" fill="#d0d0d0" stroke="#000000" stroke-width="1" rx="5"/>
+    <text x="60" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Image Input</text>
+  </g>
+  
+  <!-- Perception Processing -->
+  <g transform="translate(250, 80)">
+    <rect x="0" y="0" width="160" height="60" fill="#a0c0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Perception</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Processing</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Feature Extraction)</text>
+  </g>
+  
+  <!-- Language Input -->
+  <g transform="translate(50, 250)">
+    <circle cx="60" cy="40" r="40" fill="#e0e0e0" stroke="#000000" stroke-width="2"/>
+    <text x="60" y="45" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Language</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Speech)</text>
+    <rect x="0" y="80" width="120" height="60" fill="#d0d0d0" stroke="#000000" stroke-width="1" rx="5"/>
+    <text x="60" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Text/Speech</text>
+  </g>
+  
+  <!-- ASR Module -->
+  <g transform="translate(250, 230)">
+    <rect x="0" y="0" width="160" height="60" fill="#c0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ASR</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Module</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Whisper)</text>
+  </g>
+  
+  <!-- VLA Model -->
+  <g transform="translate(500, 155)">
+    <rect x="0" y="0" width="160" height="110" fill="#e0a0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">VLA Model</text>
+    <text x="80" y="45" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Integration</text>
+    <text x="80" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Vision-Language)</text>
+    <text x="80" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">fusion and</text>
+    <text x="80" y="90" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">planning</text>
+  </g>
+  
+  <!-- Cognitive Planning -->
+  <g transform="translate(730, 155)">
+    <rect x="0" y="0" width="160" height="110" fill="#a0e0c0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Cognitive</text>
+    <text x="80" y="45" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Planning</text>
+    <text x="80" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(LLM-based)</text>
+    <text x="80" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Task decomposition</text>
+    <text x="80" y="90" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">and reasoning</text>
+  </g>
+  
+  <!-- Action Execution -->
+  <g transform="translate(500, 320)">
+    <rect x="0" y="0" width="160" height="110" fill="#e0a0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Action</text>
+    <text x="80" y="45" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Execution</text>
+    <text x="80" y="60" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(ROS 2)</text>
+    <text x="80" y="75" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Control commands</text>
+    <text x="80" y="90" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">to robot</text>
+  </g>
+  
+  <!-- Robot -->
+  <g transform="translate(730, 320)">
+    <rect x="0" y="0" width="160" height="110" fill="#d0d0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Robot</text>
+    <text x="80" y="55" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Platform</text>
+    <text x="80" y="70" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Humanoid)</text>
+    <text x="80" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Actuators &</text>
+    <text x="80" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Sensors</text>
+  </g>
+  
+  <!-- Feedback Loop -->
+  <g transform="translate(200, 450)">
+    <rect x="0" y="0" width="500" height="60" fill="#e0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="250" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Feedback/Status Loop</text>
+    <text x="250" y="40" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Robot state, execution status, environment changes)</text>
+  </g>
+  
+  <!-- Arrows -->
+  <line x1="170" y1="140" x2="250" y2="110" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="170" y1="290" x2="250" y2="260" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="410" y1="110" x2="500" y2="180" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="410" y1="260" x2="500" y2="240" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="210" x2="730" y2="210" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="810" y1="265" x2="810" y2="320" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="375" x2="730" y2="375" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="890" y1="375" x2="910" y2="250" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="910" y1="250" x2="700" y2="250" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="450" x2="650" y2="400" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="200" y1="480" x2="130" y2="290" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="200" y1="480" x2="130" y2="140" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <text x="80" y="480" font-family="Arial" font-size="12" fill="#000000">Environment</text>
+  <text x="80" y="495" font-family="Arial" font-size="12" fill="#000000">Perception</text>
+  <text x="300" y="500" font-family="Arial" font-size="12" fill="#000000">Execution</text>
+  <text x="300" y="515" font-family="Arial" font-size="12" fill="#000000">Feedback</text>
+</svg>
