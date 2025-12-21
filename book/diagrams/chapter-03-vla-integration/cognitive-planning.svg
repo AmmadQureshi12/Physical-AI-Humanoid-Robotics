@@ -1,0 +1,136 @@
+<!-- Cognitive Planning Diagram -->
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <title>Cognitive Planning in VLA Systems</title>
+  <desc>Diagram showing the cognitive planning process in VLA systems</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="450" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">
+    Cognitive Planning in VLA Systems
+  </text>
+  
+  <!-- Natural Language Input -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="160" height="60" fill="#e0e0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Natural Language</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Input</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Voice/Text)</text>
+  </g>
+  
+  <!-- LLM Processing -->
+  <g transform="translate(250, 100)">
+    <rect x="0" y="0" width="160" height="60" fill="#c0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">LLM Processing</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">& Reasoning</text>
+  </g>
+  
+  <!-- Command Parsing -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="160" height="60" fill="#a0c0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Command</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Parsing</text>
+  </g>
+  
+  <!-- Task Decomposition -->
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="160" height="60" fill="#e0a0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Task</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Decomposition</text>
+  </g>
+  
+  <!-- Action Planning -->
+  <g transform="translate(250, 200)">
+    <rect x="0" y="0" width="160" height="60" fill="#a0e0c0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Action</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Planning</text>
+  </g>
+  
+  <!-- Environment Context -->
+  <g transform="translate(450, 200)">
+    <rect x="0" y="0" width="160" height="60" fill="#e0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Environment</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Context</text>
+  </g>
+  
+  <!-- Step 1 -->
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="160" height="60" fill="#d0d0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Step 1:</text>
+    <text x="80" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(e.g., "Go to kitchen")</text>
+  </g>
+  
+  <!-- Step 2 -->
+  <g transform="translate(250, 300)">
+    <rect x="0" y="0" width="160" height="60" fill="#d0d0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Step 2:</text>
+    <text x="80" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(e.g., "Pick up cup")</text>
+  </g>
+  
+  <!-- Step 3 -->
+  <g transform="translate(450, 300)">
+    <rect x="0" y="0" width="160" height="60" fill="#d0d0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Step 3:</text>
+    <text x="80" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(e.g., "Return to me")</text>
+  </g>
+  
+  <!-- Validation & Error Handling -->
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="160" height="60" fill="#e0a0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Validation &</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Error Handling</text>
+  </g>
+  
+  <!-- ROS Action Servers -->
+  <g transform="translate(250, 400)">
+    <rect x="0" y="0" width="160" height="60" fill="#a0d0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ROS Action</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Servers</text>
+  </g>
+  
+  <!-- Execution Monitor -->
+  <g transform="translate(450, 400)">
+    <rect x="0" y="0" width="160" height="60" fill="#d0a0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Execution</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Monitor</text>
+  </g>
+  
+  <!-- Robot Platform -->
+  <g transform="translate(330, 520)">
+    <rect x="0" y="0" width="160" height="80" fill="#c0c0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Robot Platform</text>
+    <text x="80" y="50" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Navigation, Manipulation,</text>
+    <text x="80" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Locomotion)</text>
+  </g>
+  
+  <!-- Feedback Loop -->
+  <g transform="translate(150, 630)">
+    <rect x="0" y="0" width="360" height="60" fill="#e0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="180" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Feedback Loop</text>
+    <text x="180" y="40" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Success/Failure, State Updates)</text>
+  </g>
+  
+  <!-- Arrows -->
+  <line x1="210" y1="130" x2="250" y2="130" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="410" y1="130" x2="450" y2="130" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="130" y1="160" x2="130" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="160" x2="330" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="160" x2="530" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="260" x2="530" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="260" x2="330" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="130" y1="260" x2="130" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="130" y1="360" x2="130" y2="400" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="360" x2="330" y2="400" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="360" x2="530" y2="400" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="460" x2="330" y2="520" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="410" y1="560" x2="330" y2="630" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="330" y1="630" x2="250" y2="560" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="130" y1="460" x2="210" y2="560" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="210" y1="560" x2="330" y2="520" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <text x="330" y="660" font-family="Arial" font-size="12" fill="#000000">Task Completion</text>
+  <text x="330" y="675" font-family="Arial" font-size="12" fill="#000000">or Failure Feedback</text>
+</svg>

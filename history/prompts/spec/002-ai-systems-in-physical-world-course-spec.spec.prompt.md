@@ -1,0 +1,33 @@
+---
+id: 002
+title: "AI Systems in Physical World Course Spec"
+stage: spec
+date_iso: 2025-12-05
+surface: agent
+model: Qwen
+feature: ai-embodied-intelligence
+branch: 001-ai-embodied-intelligence
+user: user
+command: /sp.specify
+labels: ["ai", "robotics", "education", "curriculum", "embodied-intelligence"]
+links:
+  spec: "specs/001-ai-embodied-intelligence/spec.md"
+  checklist: "specs/001-ai-embodied-intelligence/checklists/requirements.md"
+  ticket: null
+  adr: null
+  pr: null
+files:
+  - "specs/001-ai-embodied-intelligence/spec.md"
+  - "specs/001-ai-embodied-intelligence/checklists/requirements.md"
+  - "history/prompts/spec/001-ai-embodied-intelligence.spec.prompt.md"
+  - "history/prompts/spec/002-ai-systems-in-physical-world-course-spec.spec.prompt.md"
+tests: []
+outcome: "Successfully created feature specification from detailed user description covering AI Systems in Physical World course focusing on embodied intelligence and humanoid robotics."
+evaluation: "Complete course specification created with 4 modules (ROS 2, Digital Twin, AI-Robot Brain, VLA), weekly breakdown, learning outcomes, hardware requirements, and capstone project. All specification requirements validated."
+---
+
+# Prompt History Record
+
+## Original Prompt
+
+1. Focus and Theme Theme: AI Systems in the Physical World. Embodied Intelligence. Goal: Bridge digital brain and physical body. Students apply AI knowledge to control humanoid robots in simulated and real environments. Core Idea: Transition from digital-only AI to embodied intelligence operating in the physical world. 2. Quarter Overview Introduces Physical AI: AI systems functioning in reality, understanding physical laws. Students learn to design, simulate, and deploy humanoid robots capable of natural human interactions using ROS 2, Gazebo, NVIDIA Isaac. Capstone involves: Simulated humanoid robot receiving voice commands, planning, navigating, recognizing objects, and manipulating them. 3. Modules & Chapters Module 1: The Robotic Nervous System (ROS 2) Focus: Middleware for robot control Chapters: ROS 2 Architecture, Nodes, Topics, and Services Bridging Python Agents to ROS controllers using rclpy Understanding URDF (Unified Robot Description Format) for humanoids Lab Exercises: Build a ROS 2 package in Python Control a simulated joint using ROS 2 topics Launch files and parameter management Module 2: The Digital Twin (Gazebo & Unity) Focus: Physics simulation and environment building Chapters: 4. Gazebo Simulation: Physics, Gravity, Collisions 5. Unity: High-fidelity rendering & human-robot interaction 6. Simulating sensors: LiDAR, Depth Cameras, IMUs Lab Exercises: Create humanoid URDF in Gazebo Simulate a small room environment Sensor integration and visualization in Unity Module 3: The AI-Robot Brain (NVIDIA Isaac™) Focus: Advanced perception and training Chapters: 7. NVIDIA Isaac Sim: Photorealistic simulation & synthetic data generation 8. Isaac ROS: Hardware-accelerated VSLAM & navigation 9. Nav2: Path planning for bipedal humanoid movement Lab Exercises: Deploy perception stack on Isaac ROS Train reinforcement learning policy for bipedal walking Transfer learned model from simulation to Jetson edge device Module 4: Vision-Language-Action (VLA) Focus: LLMs + Robotics integration Chapters: 10. Voice-to-Action using OpenAI Whisper 11. Cognitive Planning: Natural language → ROS 2 action sequences 12. Capstone Project: Autonomous Humanoid - Voice command processing - Path planning & obstacle navigation - Object recognition and manipulation Lab Exercises: Implement voice command system Integrate VLA pipeline with ROS 2 nodes Demonstrate simulated humanoid executing multi-step tasks 4. Weekly Breakdown WeekTopics & Activities 1-2Introduction to Physical AI, embodied intelligence, humanoid robotics landscape, sensors overview 3-5ROS 2 fundamentals: Nodes, topics, services, Python packages, launch files 6-7Gazebo simulation: URDF/SDF, physics, sensor simulation; Introduction to Unity 8-10NVIDIA Isaac: SDK, Isaac Sim, AI perception, reinforcement learning, sim-to-real transfer 11-12Humanoid development: Kinematics, bipedal locomotion, balance, manipulation, human-robot interaction 13Conversational robotics: GPT integration, speech recognition, multi-modal interaction, capstone prep 5. Learning Outcomes Understand Physical AI principles and embodied intelligence Master ROS 2 for robotic control Simulate robots with Gazebo and Unity Develop AI pipelines using NVIDIA Isaac Design humanoid robots for natural human interaction Integrate GPT models for conversational robotics 6. Hardware & Software Requirements 6.1 Digital Twin Workstation (Required per Student) GPU: NVIDIA RTX 4070 Ti (12GB VRAM) or higher; ideal RTX 3090/4090 CPU: Intel i7 (13th Gen+) or AMD Ryzen 9 RAM: 64GB DDR5 (32GB minimum) OS: Ubuntu 22.04 LTS (recommended for ROS 2 compatibility) Role: Run Isaac Sim, Gazebo, Unity, train VLA/LLM models 6.2 Physical AI Edge Kit Brain: Jetson Orin Nano (8GB) or Orin NX (16GB) Eyes: Intel RealSense D435i/D455 Inner Ear: USB IMU (BNO055) Voice Interface: USB microphone/speaker (ReSpeaker) Purpose: Deploy ROS 2 nodes, perception & control on edge 6.3 Robot Lab Options Option A: Proxy Approach (Budget-Friendly) Quadruped or robotic arm (Unitree Go2 Edu ~$1,800-$3,000) Option B: Miniature Humanoid Small humanoid: Hiwonder TonyPi Pro (~$600), or Robotis OP3 (~$12k) Option C: Premium Lab Real humanoid: Unitree G1 (SDK-enabled, ~$3,000) 6.4 Cloud-Based Option ("Ether Lab") Cloud Workstations: AWS g5.2xlarge or g6e.xlarge with Omniverse Isaac Sim Local Edge: Jetson kit still required for physical deployment Cost Estimate: ~$205 per quarter cloud + $700 edge kit 7. Capstone & Assessments ROS 2 Package Project Gazebo Simulation Implementation Isaac Perception Pipeline Capstone Project: Autonomous humanoid with conversational AI executing multi-step tasks 8. Summary Architecture ComponentHardwareFunction Sim RigPC with RTX 4080 + Ubuntu 22.04Runs Isaac Sim, Gazebo, Unity, LLM/VLA training Edge BrainJetson Orin NanoRuns inference stack for deployment SensorsRealSense Camera + LiDARFeeds real-world data to AI ActuatorUnitree Go2 or G1Executes motor commands from Jetson 9. Notes Lab setup can be on-premise (high CapEx) or cloud-native (high OpEx) Students train in cloud, deploy to Jetson for physical execution to avoid latency issues Ye complete Spec-Kit Plus style course specification hai. Har module, chapter, lab, hardware, weekly schedule, learning outcomes aur capstone included hai, ready for authors/students.

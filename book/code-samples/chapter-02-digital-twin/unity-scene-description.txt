@@ -1,0 +1,43 @@
+# Unity Scene Description for Humanoid Robot
+
+## Scene Overview
+This Unity scene contains a humanoid robot model with the following components:
+- Base robot model with articulated joints
+- RGB camera positioned on the head
+- LiDAR sensor positioned on the torso
+- Environment with obstacles (table, box)
+- Lighting setup mimicking the Gazebo environment
+
+## Robot Components
+- Base: Box model with dimensions 0.3x0.2x0.1
+- Torso: Box model with dimensions 0.2x0.15x0.4
+- Head: Sphere with radius 0.1
+- Arms: Cylindrical segments for upper and lower arms
+
+## Sensors
+- RGB Camera: Mounted on the head link
+  - Field of view: 80 degrees
+  - Resolution: 800x600
+  - Frame rate: 30 FPS
+  
+- LiDAR: Mounted on the torso link
+  - Range: 0.1m to 30m
+  - Resolution: 1 degree
+  - 360-degree horizontal scan
+
+## Environment
+- Ground plane: 100x100m with standard material
+- Table: 1.0x0.8x0.9m positioned at (2, 0, 0.45)
+- Box: 0.5m cube positioned at (-1.5, 1.5, 0.25)
+
+## ROS Integration
+- Uses ROS# package for communication with ROS 2
+- Publishes sensor data to appropriate topics
+- Subscribes to joint command topics for robot control
+
+## Scene Setup Instructions
+1. Import the humanoid robot model (URDF from humanoid-urdf-model.urdf)
+2. Add camera and LiDAR sensors as child objects to appropriate links
+3. Configure ROS# connection parameters
+4. Set up collision detection
+5. Add environment objects as per simulation-environment.world

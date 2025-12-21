@@ -1,0 +1,81 @@
+<!-- Sensor Integration Diagram -->
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <title>Sensor Integration in Simulation</title>
+  <desc>Diagram showing how sensors are integrated in simulation environment</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="450" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">
+    Sensor Integration in Simulation
+  </text>
+  
+  <!-- Real Robot -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="150" height="180" fill="#e0e0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="75" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Real Robot</text>
+    <circle cx="75" cy="80" r="25" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+    <text x="75" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">RGB Camera</text>
+    <circle cx="75" cy="140" r="25" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+    <text x="75" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">LiDAR</text>
+    <line x1="150" y1="92" x2="200" y2="92" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+    <line x1="150" y1="152" x2="200" y2="152" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  </g>
+  
+  <!-- Simulation Environment -->
+  <g transform="translate(200, 100)">
+    <rect x="0" y="0" width="250" height="180" fill="#e0f0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="125" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Simulation Environment</text>
+    <text x="125" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Gazebo/Unity)</text>
+    <circle cx="75" cy="80" r="25" fill="#a0c0a0" stroke="#000000" stroke-width="1"/>
+    <text x="75" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">RGB Camera</text>
+    <circle cx="175" cy="80" r="25" fill="#a0c0a0" stroke="#000000" stroke-width="1"/>
+    <text x="175" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">LiDAR</text>
+    <circle cx="75" cy="140" r="25" fill="#a0c0a0" stroke="#000000" stroke-width="1"/>
+    <text x="75" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">IMU</text>
+    <circle cx="175" cy="140" r="25" fill="#a0c0a0" stroke="#000000" stroke-width="1"/>
+    <text x="175" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Depth Camera</text>
+  </g>
+  
+  <!-- ROS 2 Bridge -->
+  <g transform="translate(480, 100)">
+    <rect x="0" y="0" width="160" height="60" fill="#d0e0f0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ROS 2 Bridge</text>
+    <text x="80" y="40" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">& Publishers</text>
+  </g>
+  
+  <!-- ROS 2 Nodes -->
+  <g transform="translate(680, 100)">
+    <rect x="0" y="0" width="160" height="180" fill="#f0e0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ROS 2 Nodes</text>
+    <text x="80" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">& Processing</text>
+    <circle cx="60" cy="80" r="25" fill="#c0a0a0" stroke="#000000" stroke-width="1"/>
+    <text x="60" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Image</text>
+    <circle cx="100" cy="80" r="25" fill="#c0a0a0" stroke="#000000" stroke-width="1"/>
+    <text x="100" y="85" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">LaserScan</text>
+    <circle cx="60" cy="140" r="25" fill="#c0a0a0" stroke="#000000" stroke-width="1"/>
+    <text x="60" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">IMU</text>
+    <circle cx="100" cy="140" r="25" fill="#c0a0a0" stroke="#000000" stroke-width="1"/>
+    <text x="100" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">PointCloud</text>
+  </g>
+  
+  <!-- Unity Visualization -->
+  <g transform="translate(480, 200)">
+    <rect x="0" y="0" width="160" height="60" fill="#e0d0f0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="30" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Unity Visualization</text>
+  </g>
+  
+  <!-- Communication Arrows -->
+  <line x1="450" y1="150" x2="480" y2="130" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="650" y1="130" x2="680" y2="150" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="160" x2="560" y2="200" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="260" x2="450" y2="230" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <text x="230" y="320" font-family="Arial" font-size="12" fill="#000000">Sensor Data Flow</text>
+  <text x="330" y="340" font-family="Arial" font-size="12" fill="#000000">Real → Simulated</text>
+  <text x="560" y="290" font-family="Arial" font-size="12" fill="#000000">Visualization</text>
+  <text x="560" y="310" font-family="Arial" font-size="12" fill="#000000">Feedback</text>
+</svg>

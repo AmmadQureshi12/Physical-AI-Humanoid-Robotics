@@ -1,0 +1,45 @@
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+    "book",
+]
+python_files = [
+    "test_*.py",
+    "*_test.py",
+    "tests.py"
+]
+python_classes = [
+    "Test*"
+]
+python_functions = [
+    "test_*",
+    "given_*",
+    "when_*",
+    "then_*"
+]
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+    "-v"
+]
+
+[tool.coverage.run]
+source = [
+    "book/"
+]
+omit = [
+    "*/tests/*",
+    "*/venv/*",
+    "*/.venv/*",
+    "*/__pycache__/*"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+]

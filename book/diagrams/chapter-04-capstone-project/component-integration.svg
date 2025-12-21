@@ -1,0 +1,155 @@
+<!-- Component Integration Diagram -->
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <title>Component Integration in Humanoid System</title>
+  <desc>Diagram showing how components integrate within the humanoid system</desc>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="600" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#000000">
+    Component Integration in Humanoid System
+  </text>
+  
+  <!-- ROS 2 Middleware -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="200" height="100" fill="#a0e0c0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="100" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">ROS 2</text>
+    <text x="100" y="50" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Middleware</text>
+    <text x="100" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(DDS Core,</text>
+    <text x="100" y="80" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Topics, Services)</text>
+  </g>
+  
+  <!-- Perception Package -->
+  <g transform="translate(300, 50)">
+    <rect x="0" y="0" width="160" height="80" fill="#e0a0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Perception</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Vision, Sensors)</text>
+  </g>
+  
+  <!-- Navigation Package -->
+  <g transform="translate(300, 150)">
+    <rect x="0" y="0" width="160" height="80" fill="#d0d0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Navigation</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Nav2, SLAM)</text>
+  </g>
+  
+  <!-- Manipulation Package -->
+  <g transform="translate(300, 250)">
+    <rect x="0" y="0" width="160" height="80" fill="#e0d0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Manipulation</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(MoveIt, IK)</text>
+  </g>
+  
+  <!-- Control Package -->
+  <g transform="translate(300, 350)">
+    <rect x="0" y="0" width="160" height="80" fill="#a0d0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Control</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Joint Control)</text>
+  </g>
+  
+  <!-- VLA Package -->
+  <g transform="translate(500, 50)">
+    <rect x="0" y="0" width="160" height="80" fill="#a0c0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">VLA</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Voice, Language)</text>
+  </g>
+  
+  <!-- Planning Package -->
+  <g transform="translate(500, 150)">
+    <rect x="0" y="0" width="160" height="80" fill="#c0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Planning</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Task Planner)</text>
+  </g>
+  
+  <!-- Simulation Package -->
+  <g transform="translate(500, 250)">
+    <rect x="0" y="0" width="160" height="80" fill="#e0e0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Simulation</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Package</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Gazebo, Unity)</text>
+  </g>
+  
+  <!-- Hardware Interface Package -->
+  <g transform="translate(500, 350)">
+    <rect x="0" y="0" width="160" height="80" fill="#d0d0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Hardware</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Interface</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Drivers, Actuators)</text>
+  </g>
+  
+  <!-- Behavior Engine Package -->
+  <g transform="translate(700, 150)">
+    <rect x="0" y="0" width="160" height="80" fill="#e0a0e0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Behavior</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Engine</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Action Sequencing)</text>
+  </g>
+  
+  <!-- World Model Package -->
+  <g transform="translate(700, 250)">
+    <rect x="0" y="0" width="160" height="80" fill="#a0e0c0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">World</text>
+    <text x="80" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Model</text>
+    <text x="80" y="55" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Map, Objects)</text>
+  </g>
+  
+  <!-- Main Controller -->
+  <g transform="translate(900, 200)">
+    <rect x="0" y="0" width="160" height="80" fill="#f0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="80" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Main</text>
+    <text x="80" y="50" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Controller</text>
+  </g>
+  
+  <!-- Communication Arrows -->
+  <line x1="250" y1="150" x2="300" y2="90" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="300" y2="190" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="300" y2="290" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="300" y2="390" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="500" y2="90" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="500" y2="190" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="500" y2="290" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="150" x2="500" y2="390" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="90" x2="900" y2="240" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="190" x2="700" y2="190" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="290" x2="700" y2="290" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="660" y1="390" x2="900" y2="240" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="860" y1="190" x2="900" y2="240" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="860" y1="290" x2="900" y2="240" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="1060" y1="240" x2="1100" y2="400" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="1100" y1="400" x2="100" y2="500" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="100" y1="500" x2="250" y2="150" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  
+  <!-- Sim-to-Real -->
+  <g transform="translate(900, 400)">
+    <rect x="0" y="0" width="200" height="60" fill="#e0e0a0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="100" y="25" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Sim-to-Real</text>
+    <text x="100" y="40" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Transfer System</text>
+  </g>
+  
+  <!-- Environment -->
+  <g transform="translate(50, 500)">
+    <rect x="0" y="0" width="200" height="100" fill="#d0e0d0" stroke="#000000" stroke-width="2" rx="10"/>
+    <text x="100" y="35" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Environment</text>
+    <text x="100" y="50" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Interaction</text>
+    <text x="100" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">(Physical, Virtual,</text>
+    <text x="100" y="80" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Human Users)</text>
+  </g>
+  
+  <!-- Arrows for sim-to-real -->
+  <line x1="700" y1="330" x2="900" y2="430" stroke="#000000" stroke-width="2" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  <line x1="900" y1="430" x2="700" y2="290" stroke="#000000" stroke-width="2" stroke-dasharray="5,2" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000000" />
+    </marker>
+  </defs>
+  
+  <text x="600" y="650" font-family="Arial" font-size="14" text-anchor="middle" fill="#000000">Component Integration via ROS 2 Middleware</text>
+  <text x="600" y="670" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Arrows show data flow and communication between components</text>
+  <text x="600" y="690" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">Dashed lines indicate logical connections, solid lines indicate sim-to-real transfer</text>
+  <text x="600" y="710" font-family="Arial" font-size="12" text-anchor="middle" fill="#000000">All components interact through ROS 2 topics, services, and action interfaces</text>
+</svg>
