@@ -80,6 +80,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/chatbot',
+            label: 'Chatbot',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/AmmadQureshi12/Physical-AI-Humanoid-Robotics',
             label: 'GitHub',
             position: 'right',

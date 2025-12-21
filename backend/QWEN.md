@@ -1,4 +1,4 @@
-﻿# Qwen Code Rules
+# Qwen Code Rules
 
 This file is generated during init for the selected agent.
 
@@ -208,6 +208,3 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
-
-## Qwen Added Memories
-- Successfully implemented a complete chatbot system with React frontend and FastAPI backend, including API integration, session management, different message types, and styling. The system is now ready to be run using the start_backend.py and start_frontend.py scripts.
